@@ -1,99 +1,221 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
-# Blog App
- This is the Blog App initiated in the first week of the Rails module in the Microverse program. It is a simple blog app where you can post articles, like them, comment, edit or remove.
 
-## Built With
-![Ruby](https://img.shields.io/badge/ruby-%23CC342D.svg?style=for-the-badge&logo=ruby&logoColor=white) ![Rails](https://img.shields.io/badge/rails-%23CC0000.svg?style=for-the-badge&logo=ruby-on-rails&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white) ![VSCode](https://img.shields.io/badge/VSCode-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
--  Ruby (programming language)
--  Rails (framework)
--  PostgreSQL (database)
--  Linters: [Rubocop](https://rubocop.org/)
--  Linters: [Stylent](https://stylelint.io/)
--  Visual Studio Code (code editor)
--  RSpec (testings) 
+# 📗 Table of Contents
 
- ## Video Preview
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Run tests](#run-tests)
+  - [Deployment](#triangular_flag_on_post-deployment)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [❓ FAQ](#faq)
+- [📝 License](#license)
 
- [N/A](#)
+<!-- PROJECT DESCRIPTION -->
 
- ## SQL schema
-   ![](https://github.com/microverseinc/curriculum-rails/blob/main/blog-app/images/blog_app_erd.png?raw=true)
+# 📖 [blog-app] <a name="about-project"></a>
 
+> This project creates a fully functional blog app website that shows the list of posts and encourage readers to interact with them by adding comments and liking posts. Made with Ruby on Rails
 
-## Getting Started
+**[blog-app]** is a blog application for sharing lessons and experiences on coding with Ruby on Rails!
 
-To get a local copy up and running follow these simple steps.
+## 🛠 Built With <a name="built-with"></a>
+
+### Tech Stack <a name="tech-stack"></a>
+
+> Describe the tech stack and include only the relevant sections that apply to your project.
+
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="https://reactjs.org/">React.js</a></li>
+  </ul>
+</details>
+
+<details>
+  <summary>Server</summary>
+  <ul>
+    <li><a href="https://expressjs.com/">Express.js</a></li>
+  </ul>
+</details>
+
+<details>
+<summary>Database</summary>
+  <ul>
+    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
+  </ul>
+</details>
+
+<!-- Features -->
+
+### Key Features <a name="key-features"></a>
+
+> Describe between 1-3 key features of the application.
+
+- **[Posting user-created content to the rubycal blog for sharing experiences and lessons on Ruby on Rails programming practices]**
+- **[Commenting to discuss and share information on each post]**
+- **[Liking to show appreciation for the author]**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo">comming soon.....</a>
+
+> Add a link to your deployed project.
+
+- [Live Demo Link](https://yourdeployedapplicationlink.com)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- GETTING STARTED -->
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+> Describe how a new developer could make use of your project.
+
+To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
--  A code editor like Visual Studio Code with Git and Ruby.
+In order to run this project you need:
 
-You can check if Git is installed by running the following command in the terminal.
-```
-$ git --version
+Check your Ruby version or install it:
+
+```sh
+ ruby --version && irb
 ```
 
-Likewise for Ruby installation.
-```
-$ ruby --version && irb
+### Setup
+
+Clone this repository to your desired folder:
+
+```sh
+  git clone https://github.com/tamana-Balkhi/blog-app
+  
+  cd blog-app
 ```
 
 ### Install
+- Run ``` bundle install ```
+- Run ``` rails server ```
+- Open Browser ``` http://localhost:3000/ ```
+- Ensure you have PostgreSQL installed before running the application ``` psql --version ```
+- Run rails ``` db:create ```
+- Create a ``` .envs```  file using the link to host postgres credentials.
 
-In the terminal, navigate to where you wish the repo to be located and run these commands.
 
+### Usage
+
+To run the project, execute the following command:
+
+```sh
+  rails server
 ```
-$ git clone https://github.com/tamana-Balkhi/blog-app.git
-```
-```
-$ cd ruby-capstone
-```
-```
-$ bundle install
-```
-```
-$ rails server
-```
+
 
 ### Run tests
 
-To install rspec, in the terminal kindly run this command
+To run tests, run the following command:
+
+```sh
+  run respc
+```
+### Deployment
+
+You can deploy this project using:
+
+<!--
+Example:
+
+```sh
 
 ```
-$ gem install rspec
-```
+ -->
 
-To run tests, please run this command
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-```
-$ rspec ./spec/#{filename}_spec.rb
-```
+<!-- AUTHORS -->
 
-## Author
+## 👥 Authors <a name="authors"></a>
 
-👤 **Tamana balkhi**
+- GitHub: [@tamana-Balkhi](https://github.com/tamana-Balkhi)
+- LinkedIn: [Tamana Balkhi](https://linkedin.com/in/linkedinhandle)
 
-- GitHub: [tamana-Balkhi](https://github.com/tamana-Balkhi)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-- Twitter: [@TAMANA1377](https://twitter.com/TAMANA1377)
+<!-- FUTURE FEATURES -->
 
-- LinkedIn: [Tamana Balkhi](https://www.linkedin.com/in/tamana-balkhi/)
+## 🔭 Future Features <a name="future-features"></a>
 
-## 🤝 Contributing
+> Describe 1 - 3 features you will add to the project.
+
+- [ ] **[Views and Forms]**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](../../issues/).
 
-## Show your support
-Give a ⭐️ if you like this project!
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Acknowledgments
+<!-- SUPPORT -->
 
-- [Microverse](https://github.com/microverseinc) team.
-- Coding Partners.
-- Code Reviewers.
+## ⭐️ Show your support <a name="support"></a>
 
-## 📝 License
+> Write a message to encourage readers to support your project
+
+If you like this project...
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+> Give credit to everyone who inspired your codebase.
+
+I would like to thank...
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FAQ (optional) -->
+
+## ❓ FAQ <a name="faq"></a>
+
+> Add at least 2 questions new developers would ask when they decide to use your project.
+
+- **[Question_1]**
+
+  - [Answer_1]
+
+- **[Question_2]**
+
+  - [Answer_2]
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
+
+_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
