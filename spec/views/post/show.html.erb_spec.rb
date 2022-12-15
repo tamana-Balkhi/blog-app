@@ -5,27 +5,31 @@ RSpec.describe 'User post show page', type: :feature do
     User.create(
       name: 'Victor',
       photo: 'https://www.bing.com/th?id=ODL.c83b34c2350e6cd3a1010f7d1998cfa8&w=143&h=198&c=12&rs=1&qlt=99&pcl=faf9f7&o=6&pid=13.1',
-      bio: 'author')
+      bio: 'author'
+    )
   end
 
   let!(:post) do
     Post.create(
       author_id: user.id,
-      title: 'post1', 
-      text: 'this is my first post')
+      title: 'post1',
+      text: 'this is my first post'
+    )
   end
 
   let!(:comment) do
     Comment.create(
-     post_id: post.id,
-     author_id: user.id,
-     text: 'This is my first comment')
+      post_id: post.id,
+      author_id: user.id,
+      text: 'This is my first comment'
+    )
   end
 
   let!(:like) do
     Like.create(
       post_id: post.id,
-      author_id: user.id)
+      author_id: user.id
+    )
   end
 
   before(:each) do

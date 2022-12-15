@@ -3,57 +3,65 @@ require 'rails_helper'
 RSpec.describe 'User post index page', type: :feature do
   let!(:user1) do
     User.create(
-      name: 'Victor', 
+      name: 'Victor',
       photo: 'https://www.bing.com/th?id=ODL.c83b34c2350e6cd3a1010f7d1998cfa8&w=143&h=198&c=12&rs=1&qlt=99&pcl=faf9f7&o=6&pid=13.1',
-      bio: 'author')
+      bio: 'author'
+    )
   end
 
   let!(:user2) do
     User.create(
-      name: 'shahin', 
+      name: 'shahin',
       photo: 'https://th.bing.com/th?q=Shahin+Artist&w=120&h=120&c=1&rs=1&qlt=90&cb=1&pid=InlineBlock&mkt=en-WW&cc=AF&setlang=en&adlt=strict&t=1&mw=247',
-      bio: 'artist')
+      bio: 'artist'
+    )
   end
 
   let!(:post1) do
     Post.create(
-      author_id:user1.id,
+      author_id: user1.id,
       title: 'post1',
-      text: 'this is my first post')
+      text: 'this is my first post'
+    )
   end
 
   let!(:post2) do
     Post.create(
       author_id: user1.id,
       title: 'post2',
-      text: 'this is my second post')
+      text: 'this is my second post'
+    )
   end
 
   let!(:post3) do
     Post.create(
       author_id: user1.id,
       title: 'post3',
-      text: 'this is my third post')
+      text: 'this is my third post'
+    )
   end
 
   let!(:post4) do
     Post.create(
       author_id: user1.id,
       title: 'post4',
-      text: 'this is my fourth post')
+      text: 'this is my fourth post'
+    )
   end
 
   let!(:comment) do
     Comment.create(
       post_id: post3.id,
       author_id: user1.id,
-      text: 'This is my third comment')
+      text: 'This is my third comment'
+    )
   end
 
   let!(:like) do
     Like.create(
       post_id: post3.id,
-      author_id: user1.id)
+      author_id: user1.id
+    )
   end
 
   before(:each) do

@@ -5,14 +5,16 @@ RSpec.describe 'User pages functionality: User index page ', type: :feature do
     User.create(
       name: 'Victor',
       photo: 'https://www.bing.com/th?id=ODL.c83b34c2350e6cd3a1010f7d1998cfa8&w=143&h=198&c=12&rs=1&qlt=99&pcl=faf9f7&o=6&pid=13.1',
-      bio: 'author')
+      bio: 'author'
+    )
   end
 
   let!(:user2) do
     User.create(
       name: 'shahin',
       photo: 'https://th.bing.com/th?q=Shahin+Artist&w=120&h=120&c=1&rs=1&qlt=90&cb=1&pid=InlineBlock&mkt=en-WW&cc=AF&setlang=en&adlt=strict&t=1&mw=247',
-      bio: 'artist')
+      bio: 'artist'
+    )
   end
 
   it 'signs @user /users/ in home' do

@@ -1,18 +1,20 @@
 require 'rails_helper'
 
 RSpec.describe 'User pages functionality : user show page', type: :feature do
-   let!(:user) do
+  let!(:user) do
     User.create(
       name: 'Victor',
       photo: 'https://www.bing.com/th?id=ODL.c83b34c2350e6cd3a1010f7d1998cfa8&w=143&h=198&c=12&rs=1&qlt=99&pcl=faf9f7&o=6&pid=13.1',
-      bio: 'author')
+      bio: 'author'
+    )
   end
 
   let!(:post) do
     Post.create(
       author_id: user.id,
       title: 'post1',
-      text: 'this is victor first post')
+      text: 'this is victor first post'
+    )
   end
 
   before(:each) do
