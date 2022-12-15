@@ -93,7 +93,7 @@ In order to run this project you need:
 Check your Ruby version or install it:
 
 ```sh
- ruby --version && irb
+ ruby --version
 ```
 
 ### Setup
@@ -112,7 +112,6 @@ Clone this repository to your desired folder:
 - Open Browser ``` http://localhost:3000/ ```
 - Ensure you have PostgreSQL installed before running the application ``` psql --version ```
 - Run rails ``` db:create ```
-- Create a ``` .envs```  file using the link to host postgres credentials.
 
 
 ### Usage
@@ -129,7 +128,7 @@ To run the project, execute the following command:
 To run tests, run the following command:
 
 ```sh
-  run respc
+  run rspec
 ```
 ### Deployment
 
