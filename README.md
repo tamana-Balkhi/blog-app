@@ -62,7 +62,7 @@
 
 > Describe between 1-3 key features of the application.
 
-- **[Posting user-created content to the rubycal blog for sharing experiences and lessons on Ruby on Rails programming practices]**
+- **[Posting user-created content to the  blog-app for sharing experiences and lessons]**
 - **[Commenting to discuss and share information on each post]**
 - **[Liking to show appreciation for the author]**
 
