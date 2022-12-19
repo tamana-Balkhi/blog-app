@@ -9,11 +9,35 @@ RSpec.describe 'User pages functionality : user show page', type: :feature do
     )
   end
 
-  let!(:post) do
+  let!(:post1) do
     Post.create(
-      author_id: user.id,
+      author_id: user1.id,
       title: 'post1',
-      text: 'this is victor first post'
+      text: 'this is my fifth post'
+    )
+  end
+
+  let!(:post2) do
+    Post.create(
+      author_id: user1.id,
+      title: 'post2',
+      text: 'this is my second post'
+    )
+  end
+
+  let!(:post3) do
+    Post.create(
+      author_id: user1.id,
+      title: 'post3',
+      text: 'this is my third post'
+    )
+  end
+
+  let!(:post4) do
+    Post.create(
+      author_id: user1.id,
+      title: 'post4',
+      text: 'this is my  fourth post'
     )
   end
 
@@ -30,7 +54,7 @@ RSpec.describe 'User pages functionality : user show page', type: :feature do
   end
 
   it 'I can see the number of posts the user has written.' do
-    expect(page).to have_content('Number of posts: 1')
+    expect(page).to have_content('Number of posts: 4  ')
   end
 
   it "I can see the user's bio." do
@@ -51,5 +75,13 @@ RSpec.describe 'User pages functionality : user show page', type: :feature do
     visit user_post_path(user, post)
     click_on 'See all posts'
     expect(page).to have_current_path(user_posts_path(user))
+  end
+
+  it 'displays the last 3 posts' do
+    visit user_posts_path(user)
+    expect(page).to have_content('Post3')
+    expect(page).to have_content('Post2')
+    expect(page).to have_content('Post1')
+    expect(page).to_not have_content('Post4')
   end
 end

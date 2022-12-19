@@ -21,7 +21,7 @@ RSpec.describe 'User post index page', type: :feature do
     Post.create(
       author_id: user1.id,
       title: 'post1',
-      text: 'this is my first post'
+      text: 'this is my post'
     )
   end
 
@@ -29,7 +29,7 @@ RSpec.describe 'User post index page', type: :feature do
     Post.create(
       author_id: user1.id,
       title: 'post2',
-      text: 'this is my second post'
+      text: 'this is my post'
     )
   end
 
@@ -37,7 +37,7 @@ RSpec.describe 'User post index page', type: :feature do
     Post.create(
       author_id: user1.id,
       title: 'post3',
-      text: 'this is my third post'
+      text: 'this is my post'
     )
   end
 
@@ -45,7 +45,7 @@ RSpec.describe 'User post index page', type: :feature do
     Post.create(
       author_id: user1.id,
       title: 'post4',
-      text: 'this is my fourth post'
+      text: 'this is my post'
     )
   end
 
