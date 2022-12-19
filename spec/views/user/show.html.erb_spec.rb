@@ -54,7 +54,7 @@ RSpec.describe 'User pages functionality : user show page', type: :feature do
   end
 
   it 'I can see the number of posts the user has written.' do
-    expect(page).to have_content('Number of posts: 4  ')
+    expect(page).to have_content('Number of posts: 4')
   end
 
   it "I can see the user's bio." do
